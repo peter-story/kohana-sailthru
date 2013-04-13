@@ -1,19 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
 /*******************************************************************************
- * Sailthru API PHP5 Client for New Era Publishing
- *******************************************************************************
- *
- * A simple client library to remotely access the Sailthru REST API.
- *
- * NOTE: This custom library was downloaded by Wesley Ray from sailthru.com
- * on 01/11/2011. It contains the API key and shared-secret specific to New Era Publishing.
- * For your own security, this information should not be shared. If you choose
- * to redistribute this code, as permitted by the license, please remove this
- * private information.
- *
- *******************************************************************************
- *
  * Copyright (c) 2007 Sailthru, Inc.
  * All rights reserved.
  *
