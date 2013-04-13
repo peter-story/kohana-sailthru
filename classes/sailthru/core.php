@@ -481,22 +481,4 @@ class Sailthru_Core {
     static function get_signature_hash($params, $secret) {
         return md5(Sailthru::get_signature_string($params, $secret));
     }
-
-    function get_sender_details($order) {
-        $site_id      = Arr::get($this->_config, 'order_site_id');
-
-        $site         = $site_id ? strtolower($order->$site_id) : 'default';
-
-        $default_site = Arr::path($this->_config, "site_information.default", array());
-
-        $this_site    = Arr::path($this->_config, "site_information.$site", array());
-
-        foreach ($default_site as $key => $val) {
-            if (empty($this_site[$key])) {
-                $this_site[$key] = $val;
-            }
-        }
-
-        return $this_site;
-    }
 }
